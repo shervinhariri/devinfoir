@@ -1,0 +1,73 @@
+BODY {
+	background: #282931;
+}
+h1 {
+	font-family: 'Indie Flower', cursive;
+	color: #1E7A99;
+	  font-size: 55px;
+	margin-top: 40px;
+}
+h2 {
+	font-family: 'Indie Flower', cursive;
+	color: #8EB7CC;
+}
+h3 {
+	font-family: 'Indie Flower', cursive;
+	color: #A0ACB2;
+}
+h4 {
+  font-family: 'Indie Flower', cursive;
+  color: #555560;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+p {
+	color: #CCCCCC;
+	font-size: 15px;
+	font-family: 'Varela Round', sans-serif;
+}
+<!--------------------------------------Second SECTION-------------------------------------->
+.about-social {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .about-social li {
+    padding-right: 10px; }
+  .about-social .fab, .about-social .far {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px #a3a3a3 solid;
+    border-radius: 50%;
+    color: #454545;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    cursor: pointer; }
+    .about-social .fab:hover, .about-social .far:hover {
+      color: #1E7A99; }
+<!--------------------------------------skill SECTION-------------------------------------->
+
+.skillbar {
+  display: inner-block;
+}
+.skillbar-bar:before {
+  background: #CCCCCC;
+  content: "";
+  height: 3px;
+  position: absolute;
+  width: 50%;
+  z-index: -1;
+}
+.skillbar-bar {
+  height: 3px;
+  background: #1E7A99;
+}
+ <!-------------------------------------- SECTION-------------------------------------->
+ul {
+  list-style: none; }
+li {
+  display: inline-block; }
