@@ -28,29 +28,11 @@ p {
 	font-size: 15px;
 	font-family: 'Varela Round', sans-serif;
 }
-<!--------------------------------------Second SECTION-------------------------------------->
-.about-social {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-  .about-social li {
-    padding-right: 10px; }
-  .about-social .fab, .about-social .far {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 20px;
-    border: 1px #a3a3a3 solid;
-    border-radius: 50%;
-    color: #454545;
-    -webkit-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-    cursor: pointer; }
-    .about-social .fab:hover, .about-social .far:hover {
-      color: #1E7A99; }
+hr.homeline {
+  border: 1px solid #8EB7CC;
+  width: 30%;
+}
 <!--------------------------------------skill SECTION-------------------------------------->
-
 .skillbar {
   display: inner-block;
 }
@@ -66,8 +48,3 @@ p {
   height: 3px;
   background: #1E7A99;
 }
- <!-------------------------------------- SECTION-------------------------------------->
-ul {
-  list-style: none; }
-li {
-  display: inline-block; }
