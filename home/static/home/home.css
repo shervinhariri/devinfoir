@@ -16,12 +16,12 @@ h3 {
 	color: #A0ACB2;
 }
 h4 {
-  font-family: 'Indie Flower', cursive;
-  color: #555560;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0px;
-  padding: 0px;
+	font-family: 'Indie Flower', cursive;
+	color: #555560;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
 }
 p {
 	color: #CCCCCC;
@@ -29,8 +29,27 @@ p {
 	font-family: 'Varela Round', sans-serif;
 }
 hr.homeline {
-  border: 1px solid #8EB7CC;
-  width: 30%;
+	margin-bottom: 0px;
+	border: 1px solid #555560;
+	width: 30%;
+}
+h2.card-title {
+	font-family: 'Indie Flower', cursive;
+	color: #1E7A99;
+	font-size: 27px;
+	margin-top: 50px;
+}
+hr.cardline {
+	border: 1px solid #555560;
+	width: 80%;
+}
+p.card-text {
+	color: #CCCCCC;
+	font-size: 13px;
+	font-family: 'Varela Round', sans-serif;
+}
+p.skill-name{
+	margin-top: 30px;
 }
 <!--------------------------------------skill SECTION-------------------------------------->
 .skillbar {
