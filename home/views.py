@@ -18,3 +18,7 @@ def home(request):
         'data': posts
     }
     return render(request, 'home/home.html', ada)
+
+
+def bitmex(request):
+    return render(request, 'home/bitmex.html')

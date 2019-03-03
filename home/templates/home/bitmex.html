@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -11,7 +12,7 @@
 	<!--------------------------------------Latest CDN-------------------------------------->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script><!--------------------------------------CSS Link-------------------------------------->
-	<link rel="stylesheet" href="css/bitmex.css">
+	<link rel="stylesheet" href="{% static 'home/bitmex.css' %}">
 </head>
 <body>
 <!--------------------------------------navbar SECTION-------------------------------------->
@@ -25,11 +26,11 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent-333">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-					<a class="nav-link" href="#">Home
+					<a class="nav-link" href="http://devinfo.ir/">Home
 					</a>
 					</li>
 					<li class="nav-item active">
-					<a class="nav-link" href="#">Cisco</a>
+					<a class="nav-link" href="">Bitmex</a>
 					</li>
 					<li class="nav-item">
 					<a class="nav-link" href="#">Python</a>
