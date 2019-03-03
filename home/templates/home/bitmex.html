@@ -3,8 +3,7 @@
 <html lang="en" >
 <head>
 	<meta charset="UTF-8">
-	<title>Portfolio Home Page</title>
-
+	<title>Bitmex</title>
 	<!--------------------------------------Fonts-------------------------------------->
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -13,7 +12,7 @@
 	<!--------------------------------------Latest CDN-------------------------------------->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script><!--------------------------------------CSS Link-------------------------------------->
-	<link rel="stylesheet" href="{% static 'home/home.css' %}">
+	<link rel="stylesheet" href="{% static 'home/bitmex.css' %}">
 </head>
 <body>
 <!--------------------------------------navbar SECTION-------------------------------------->
@@ -26,13 +25,12 @@
 				</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent-333">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-					<a class="nav-link" href="">Home
-					<span class="sr-only">(current)</span>
+					<li class="nav-item">
+					<a class="nav-link" href="http://devinfo.ir/">Home
 					</a>
 					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="bitmex">Bitmex</a>
+					<li class="nav-item active">
+					<a class="nav-link" href="">Bitmex</a>
 					</li>
 					<li class="nav-item">
 					<a class="nav-link" href="#">Python</a>
@@ -71,87 +69,83 @@
 			<div class="row align-items-start">
 				<div class="col">
 					<h1>Devinfo</h1>
-					<h4>Founder is :</h4>
-					<p id="about-me">Shervin Hariri</p>
+					<h4>Rest API Reading with Python and Views With Django</h4>
 				</div>
 			</div>
 		</div>
 	</section>
 <!--------------------------------------Second SECTION-------------------------------------->
 	<section id="home-title">
-		<div class="container">
-			<div class="row align-items-start">
-				<div class="col">
-				<div>
-				<h3>Hi, I'm Shervin</h3>
-				<p>Experienced Specialist with a demonstrated history of working in the banking industry.</p>
-				<p>Also knows about:</p>
-				<ul style="color: #CCCCCC;">	
-				<li>Skilled in F5 BigIP, Network Administration, Cisco Networking, Firewalls, and Suite</li>
-					<li>Experience in design and implementation of data communication and computer networks based on Cisco systems and Microsoft environments</li>
-					<li>Highly skilled in CCNP and CCNA Security and Firewall Knowledge.</li>
-					<li>Python Programmer</li>
-					<li>Flexible, committed and disciplined team player with the ability to work independently.</li>
-					<li>Technical problem solving and trouble shooting skills.</li>
-				</ul>
-				<p>Review and analysis of network connectivity are my favorites so I prefer to do large projects with new challenges. There is no problem that remains unresolved, this is my belief to problems that will be created.
-				</p>
-				</div>
-				</div>
-				<div class="col">
-				<h3>My Skills</h3>
-				<p class="skill-name">Python, Network Programming</p>
-				<div class="skillbar">
-					<div class="skillbar-bar" style="width: 22%;"></div>
-				</div>	
-				<p class="skill-name">Cisco, Firewall, Security</p>
-				<div class="skillbar">
-					<div class="skillbar-bar" style="width: 42%;"></div>
-				</div>
-				<p class="skill-name">Django, HTML, CSS</p>
-				<div class="skillbar">
-					<div class="skillbar-bar" style="width: 8%;"></div>
-				</div>
-				<p class="skill-name">Linux Services, CENTOS</p>
-				<div class="skillbar">
-					<div class="skillbar-bar" style="width: 28%;"></div>
-				</div>
-				{% for item in data %}
-				<p class="skill-name">ADA Price from Bitmex is : {{ item.title }}</p>
-				{% endfor %}
-				</div>
-			</div>
+	<div class="container">
+	
+	<div class="row align-items-start">
+
+	<div class="card">
+	<div class="text-white text-center py-2 px-4 my-2">
+		<h2 class="card-title">Last Price in Bitmex</h2>
+		<table class="table table-striped">
+		<tbody>
+			<tr>
+			<td>Bitcoin</td>
+			<td>//////</td>
+			</tr>
+			<tr>
+			<td>Cardano</td>
+			<td>//////</td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
+	</div>
+
+	<div class="card">
+	<div class="text-white text-center py-2 px-4 my-2">
+		<h2 class="card-title">Chat Box in Bitmex</h2>
+		<table class="table table-striped">
+		<tbody>
+			<tr>
+			<td>Bitcoin</td>
+			<td>//////</td>
+			</tr>
+			<tr>
+			<td>Cardano</td>
+			<td>//////</td>
+			</tr>
+		</tbody>
+		</table>
 		</div>
-		</div>
+	</div>
+	
+	</div>
+	</div>	
+	</div>	
+	</div>
 	</section>
 <!--------------------------------------card SECTION-------------------------------------->
-	<section id="home-cards">
+<section id="home-title">
 		<div class="container">
-		<div class="row">
-			<div class="col text-center">
-			<h2 class="card-title">Linkedin</h2>
-			<hr class="cardline"></hr>
-			<p class="card-text">This is my Linkedin address you could check my profile here :</p>
-			<a class="linkedin" href="https://www.linkedin.com/in/shervinhariri/"><i class="fab fa-linkedin fa-2x" style="color: #A3CCCC;"></i></a>
-			</div>
-				<div class="col text-center">
-				<h2 class="card-title">Github</h2>
-				<hr class="cardline"></hr>
-				<p class="card-text">I'll be happy if you join to my github project, this is my github :</p>
-				<a class="linkedin" href="https://github.com/shvin/"><i class="fab fa-github-square fa-2x" style="color: #A3CCCC;"></i></a>
+			<div class="row">
+				<div class="col">
+				<div>
+				<h3>REST API</h3>
+				<p>Read Data and Last Price from Bitmex, Also With Rest API read ChatBox</p>
+				<ul style="color: #CCCCCC;">	
+					<li>Read ChatBox and filter just these characters</li>
+					<li>up, down, long, short</li>
+				</ul>
+				<p></p>
 				</div>
-			<div class="col text-center">
-			<h2 class="card-title">Twitter</h2>
-			<hr class="cardline"></hr>
-			<p class="card-text">You could follow me in twitter, this is my twitter address :</p>
-			<a class="linkedin" href="https://twitter.com/shervin_hariri/"><i class="fab fa-twitter-square fa-2x" style="color: #A3CCCC;"></i></a>
-			</div>
-				<div class="col text-center">
-				<h2 class="card-title">Gmail</h2>
-				<hr class="cardline"></hr>
-				<p class="card-text">I'll be happy to be in touch with me, this is my gmail address :</p>
-				<a class="linkedin" href="shervin.ha@gmail.com"><i class="fab fa-google-plus-square fa-2x" style="color: #A3CCCC;"></i></a>
 				</div>
+				<div class="col">
+				<h3>DJANGO</h3>
+				<p>with url and views just show these data intries :</p>
+				<ul style="color: #CCCCCC;">	
+					<li>Read ChatBox and filter just these characters</li>
+					<li>up, down, long, short</li>
+				</ul>
+				</div>
+				</div>
+			</div>
 		</div>
 		</div>
 	</section>

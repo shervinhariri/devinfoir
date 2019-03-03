@@ -1,0 +1,45 @@
+BODY {
+	background: #282931;
+}
+.card {
+	background-color: #596C7F;
+	margin: auto;
+}
+h1 {
+	font-family: 'Indie Flower', cursive;
+	color: #1E7A99;
+	font-size: 55px;
+	margin-top: 40px;
+}
+h2 {
+	color: #CCCCCC;
+	font-size: 30px;
+	font-family: 'Indie Flower', cursive;
+}
+h3 {
+	font-family: 'Indie Flower', cursive;
+	color: #A3CCCC;
+	margin-top: 50px;
+}
+h4, th {
+	font-family: 'Indie Flower', cursive;
+	color: #A3CCCC;
+	font-size: 20px;
+	margin-bottom: 50px;
+	padding: 0px;
+}
+p {
+	color: #CCCCCC;
+	font-size: 15px;
+	font-family: 'Varela Round', sans-serif;
+}
+hr.homeline {
+	margin-top: 100px;
+	border: 1px solid #555560;
+	width: 30%;
+}
+tr {
+	color: #CCCCCC;
+	font-size: 20px;
+	font-family: 'Indie Flower', cursive;
+}
