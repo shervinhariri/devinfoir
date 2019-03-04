@@ -38,6 +38,12 @@ h2.card-title {
 	font-size: 27px;
 	margin-top: 50px;
 }
+h2.card-weather {
+	font-family: 'Indie Flower', cursive;
+	color: #CCCCCC;
+	font-size: 20px;
+	margin-top: 30px;
+}
 hr.cardline {
 	border: 1px solid #555560;
 	width: 80%;
