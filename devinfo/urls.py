@@ -23,5 +23,6 @@ urlpatterns = [
     path('', include('home.urls')),
     path('bitmex/', bitmex),
     path('weather/', weather),
+    path('bitmex/weather/', weather),
     path('admin/', admin.site.urls),
 ]
