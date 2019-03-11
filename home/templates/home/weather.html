@@ -29,11 +29,11 @@
 					<a class="nav-link" href="http://devinfo.ir/">Home
 					</a>
 					</li>
-					<li class="nav-item active">
-					<a class="nav-link" href="">Bitmex</a>
+					<li class="nav-item ">
+					<a class="nav-link" href="bitmex">Bitmex</a>
 					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="weather">Weather</a>
+					<li class="nav-item active">
+					<a class="nav-link" href="">Weather</a>
 					</li>
 					<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
@@ -69,7 +69,7 @@
 			<div class="row align-items-start">
 				<div class="col">
 					<h1>Devinfo</h1>
-					<h4>Rest API Reading with Python and Views With Django</h4>
+					<h4>Choose your City :</h4>
 				</div>
 			</div>
 		</div>
@@ -77,44 +77,42 @@
 <!--------------------------------------Second SECTION-------------------------------------->
 	<section id="home-title">
 	<div class="container">
-	
 	<div class="row align-items-start">
 
-	<div class="card">
-	<div class="text-white text-center py-2 px-4 my-2">
-		<h2 class="card-title">Last Price in Bitmex</h2>
-		<table class="table table-striped">
-		<tbody>
-			<tr>
-			<td>Bitcoin</td>
-			<td>//////</td>
-			</tr>
-			<tr>
-			<td>Cardano</td>
-			<td>//////</td>
-			</tr>
-		</tbody>
-		</table>
-	</div>
+	<div class="col">
+	<form class="form-inline md-form mr-auto mb-4" method="POST">
+		{% csrf_token %}
+		{{ form.name }}
+		<button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit">
+			Add City
+		</button>
+	</form>
 	</div>
 
-	<div class="card">
-	<div class="text-white text-center py-2 px-4 my-2">
-		<h2 class="card-title">Chat Box in Bitmex</h2>
-		<table class="table table-striped">
-		<tbody>
-			<tr>
-			<td>Bitcoin</td>
-			<td>//////</td>
-			</tr>
-			<tr>
-			<td>Cardano</td>
-			<td>//////</td>
-			</tr>
-		</tbody>
-		</table>
-		</div>
-	</div>
+		<div class="col">
+                    {% for city_weather in weather_data %}
+                    <div class="box">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-60x60">
+                                    <img src="http://openweathermap.org/img/w/{{ city_weather.icon }}.png" alt="Image">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <span class="title">{{ city_weather.city }}</span>
+                                        <br>
+                                        <span class="subtitle">{{ city_weather.temperature }}° F</span>
+                                        <br> {{ city_weather.description }}
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    {% endfor %}
+                </div>
+
 	
 	</div>
 	</div>	
@@ -122,33 +120,7 @@
 	</div>
 	</section>
 <!--------------------------------------card SECTION-------------------------------------->
-<section id="home-title">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-				<div>
-				<h3>REST API</h3>
-				<p>Read Data and Last Price from Bitmex, Also With Rest API read ChatBox</p>
-				<ul style="color: #CCCCCC;">	
-					<li>Read ChatBox and filter just these characters</li>
-					<li>up, down, long, short</li>
-				</ul>
-				<p></p>
-				</div>
-				</div>
-				<div class="col">
-				<h3>DJANGO</h3>
-				<p>with url and views just show these data intries :</p>
-				<ul style="color: #CCCCCC;">	
-					<li>Read ChatBox and filter just these characters</li>
-					<li>up, down, long, short</li>
-				</ul>
-				</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</section>
+
 <!--------------------------------------footer SECTION-------------------------------------->
 	<section id="footer-end">
 	<footer class="page-footer text-center">
