@@ -116,8 +116,20 @@
 				<div class="skillbar">
 					<div class="skillbar-bar" style="width: 28%;"></div>
 				</div>
-					<p>{{ city_weather.city }}</p>
-					<p>{{ city_weather.temp }}</p>
+	<div class="row">
+				<div class="col text-center">
+	
+		<h2 class="card-title">Last YAHOO News</h2>
+                <hr class="cardline"></hr>                
+			{% for item in city_weather %}
+					{% if forloop.last %}
+					<p class="card-text">{{ item }}</p>
+					{% endif %}				
+                                        {% endfor %}
+			
+	</div>
+     </div>
+
 				</div>
 			</div>
 		</div>
