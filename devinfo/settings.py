@@ -25,7 +25,11 @@ SECRET_KEY = 'iii3bc#u3%)tz*jypl^!@^x()@)ocgzlpqvmy3e$95*!*q&2zt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['devinfo.ir', '127.0.0.1', '185.173.104.253']
+=======
+ALLOWED_HOSTS = ['devinfo.ir', '127.0.0.1', '192.168.126.66']
+>>>>>>> d4268970c0efff12454bb383c2faa359d198133e
 
 
 # Application definition

@@ -117,6 +117,7 @@
 					<div class="skillbar-bar" style="width: 28%;"></div>
 				</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 				{% for item in data %}
 				<p class="skill-name">ADA Price from Bitmex is : {{ item.title }}</p>
 				{% endfor %}
@@ -133,6 +134,22 @@
 					<p>{{ city_weather.city }}</p>
 					<p>{{ city_weather.temp }}</p>
 >>>>>>> a5ff2169331749988f153def67cb57e50c9dcd35
+=======
+	<div class="row">
+				<div class="col text-center">
+	
+		<h2 class="card-title">Last YAHOO News</h2>
+                <hr class="cardline"></hr>                
+			{% for item in city_weather %}
+					{% if forloop.last %}
+					<p class="card-text">{{ item }}</p>
+					{% endif %}				
+                                        {% endfor %}
+			
+	</div>
+     </div>
+
+>>>>>>> d4268970c0efff12454bb383c2faa359d198133e
 				</div>
 					
 				</div>
